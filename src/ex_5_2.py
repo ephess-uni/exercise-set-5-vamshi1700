@@ -13,23 +13,6 @@ try:
 except ImportError:
     from util import get_repository_root
 
-    import argparse
-    from ex_5_0 import line_count
-
-
-    def main():
-        # Create an ArgumentParser object
-        parser = argparse.ArgumentParser(description="This program prints the number of lines in infile.")
-
-        # Add a positional argument for infile
-        parser.add_argument("infile", help="Input file name")
-
-        # Parse the command-line arguments
-        args = parser.parse_args()
-
-        # Call the line_count function with the infile argument
-        line_count(args.infile)
-
 if __name__ == "__main__":
 
     # Use these predefined input / output files
